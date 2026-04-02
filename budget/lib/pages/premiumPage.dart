@@ -715,9 +715,7 @@ showHelpRestorePopup(BuildContext context) {
 }
 
 bool hidePremiumPopup() {
-  return premiumPopupEnabled == false ||
-      appStateSettings["purchaseID"] != null ||
-      appStateSettings["previewDemo"] == true;
+  return true;
 }
 
 Future<bool> premiumPopupPushRoute(BuildContext context) async {
